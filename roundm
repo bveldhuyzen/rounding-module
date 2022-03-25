@@ -1,0 +1,101 @@
+#!/bin/bash
+#rounding tool - interactive mode v2.00
+#
+#
+#
+
+#
+#
+#echo "roundm $="bash roundm" >> ~/.bashrc && source ~/.bashrc
+
+#
+#
+echo 'Enter path to file including full file name'
+read FILE_PATH
+echo "$FILE_PATH" > file_path.txt
+echo ''
+echo 'If the following file only contains one numerical value per line'
+echo 'where the integer is separated from the decimal(s) by either dot or comma'
+echo 'then hit enter, else use ctrl-c'
+echo "FILE = $FILE_PATH"
+echo ''
+read -p '...'
+echo 'done'
+
+
+#
+#
+echo 'Round up (1) or down (2)?'
+read SELECTION_UPDOWN
+echo "$SELECTION_UPDOWN" > selection_updown.txt
+
+
+#
+#
+echo 'Choose 1 for v1.01 (round with integer as starting point)'
+echo 'Choose 2 for v1.02 (round with 0 as starting point)'
+read SELECTION_MODULE
+echo "$SELECTION_MODULE" > selection_module.txt 
+
+
+#
+#
+echo 'Round to nearest (multiple) of what decimal(s)?'
+read INPUT_ROUNDING
+echo "$INPUT_ROUNDING" > round_to_this.txt
+
+
+
+#UP
+#
+#
+#
+if [[ $SELECTION_UPDOWN -eq 1 ]] && [[ $SELECTION_MODULE -eq 1 ]]
+then
+input="$FILE_PATH"
+while IFS= read -r line
+do
+  echo "$line" > full_number_1_dotcom.txt && sed 's/,/./g' full_number_1_dotcom.txt > full_number_1.txt && bash rounding-up-module-v101-for-lists.sh
+done < "$input"
+fi
+
+if [[ $SELECTION_UPDOWN -eq 1 ]] && [[ $SELECTION_MODULE -eq 2 ]]
+then
+input="$FILE_PATH"
+while IFS= read -r line
+do
+  echo "$line" > full_number_1_dotcom.txt && sed 's/,/./g' full_number_1_dotcom.txt > full_number_1.txt && bash rounding-up-module-v102-for-lists.sh
+done < "$input"
+fi
+
+
+
+#DOWN
+#
+#
+#
+if [[ $SELECTION_UPDOWN -eq 2 ]] && [[ $SELECTION_MODULE -eq 1 ]]
+then
+input="$FILE_PATH"
+while IFS= read -r line
+do
+  echo "$line" > full_number_1_dotcom.txt && sed 's/,/./g' full_number_1_dotcom.txt > full_number_1.txt && bash rounding-down-module-v101-for-lists.sh
+done < "$input"
+fi
+
+if [[ $SELECTION_UPDOWN -eq 2 ]] && [[ $SELECTION_MODULE -eq 2 ]]
+then
+input="$FILE_PATH"
+while IFS= read -r line
+do
+  echo "$line" > full_number_1_dotcom.txt && sed 's/,/./g' full_number_1_dotcom.txt > full_number_1.txt && bash rounding-down-module-v102-for-lists.sh
+done < "$input"
+fi
+
+read -p 'pause'
+
+#remove temp files
+rm file_path.txt full_number_1_dotcom.txt selection_updown.txt
+
+
+#V
