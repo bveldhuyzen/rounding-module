@@ -2,10 +2,10 @@
 Interactive rounding module - rounds numbers from file to any specified decimal(s). Accepts files as input. Logs output line by line in new text file.
 
 List file format:
-One numerical value per line
-Any amount of lines
-Integer separated from decimal(s) by either dot or comma
-The file can contain text on lines; the output in the log will be incorrect for that line
+- One numerical value per line
+- Any amount of lines
+- Integer separated from decimal(s) by either dot or comma
+- The file can contain text on lines; the output in the log will be incorrect for that line
 
 ____
 
@@ -35,15 +35,13 @@ ____
 
 ROUNDING DOWN MODULES
 
-v1.01 Calculates the nearest (multiple of) specified decimals with the integer as starting point (e.g. with rounding down set at 0.75, the number 1,55 will round down to 1.00)
-
-v1.02 Calculates the nearest (multiple of) specified decimals with 0 (zero) as starting point (e.g. with rounding down set at 0.75, the number 1,55 will round down to 1.50)
+- v1.01 Calculates the nearest (multiple of) specified decimals with the integer as starting point (e.g. with rounding down set at 0.75, the number 1,55 will round down to 1.00)
+- v1.02 Calculates the nearest (multiple of) specified decimals with 0 (zero) as starting point (e.g. with rounding down set at 0.75, the number 1,55 will round down to 1.50)
 
 ____
 
 ROUNDING UP MODULES
 
-v1.01 Calculates the nearest (multiple of) specified decimals with the integer as starting point (e.g. with rounding up set at 0.75, the number 1,55 will round up to 1.75)
-
-v1.02 Calculates the nearest (multiple of) specified decimals with 0 (zero) as starting point (e.g. with rounding up set at 0.75, the number 1,55 will round up to 2,25)
+- v1.01 Calculates the nearest (multiple of) specified decimals with the integer as starting point (e.g. with rounding up set at 0.75, the number 1,55 will round up to 1.75)
+- v1.02 Calculates the nearest (multiple of) specified decimals with 0 (zero) as starting point (e.g. with rounding up set at 0.75, the number 1,55 will round up to 2,25)
 
