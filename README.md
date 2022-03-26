@@ -25,8 +25,8 @@ INSTRUCTIONS FOR USE
 1. Copy-paste the file path including file name, e.g. home/me/Desktop/my_list.txt
 2. Confirm entry is correct
 3. Select rounding up or down
-4. Enter decimal(s) to round to
-5. Select rounding module v1.01 or v1.02
+4. Select rounding module v1.01 or v1.02
+5. Enter decimal(s) to round to
 6. Done
 
 Find the output in a new text file
