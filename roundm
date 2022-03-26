@@ -6,7 +6,7 @@
 
 #
 #
-#echo "roundm $="bash roundm" >> ~/.bashrc && source ~/.bashrc
+echo "roundm $="bash roundm" >> ~/.bashrc && source ~/.bashrc
 
 #
 #
