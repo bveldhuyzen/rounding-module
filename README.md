@@ -15,7 +15,7 @@ sudo apt-get install calc git
 
 1. Obtain roundm via git clone or grabber of choice, e.g. #git clone [link_to_repo_here]
 2. Run #bash roundm
-3. After running #bash rounding-module once, your terminal can start the rounding module next time by just executing #roundm
+3. After running #bash roundm once, your terminal can start the rounding module next time by just executing #roundm
 4. Done.
 
 ____
