@@ -25,7 +25,9 @@ echo "'" >> alias
 
 cat alias | tr -d '\n' > alias2
 alias=$(<alias2)
+cd
 echo "$alias" >> ~/.bashrc && source ~/.bashrc
+cd rounding-module
 
 echo '1' > installed
 #rm install install2 alias alias2
