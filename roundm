@@ -7,31 +7,7 @@
 #
 #
  
-if [[ installed -eq 1 ]]
-then
-echo 'V'
-else
-
-echo "$PWD" > install
-echo "/roundm" >> install
-cat install | tr -d '\n' > install2
-
-echo '"'
-echo "alias roundm=" > alias
-#echo "'" >> alias
-echo "'bash" >> alias
-cat install2 >> alias
-echo "'" >> alias
-
-cat alias | tr -d '\n' > alias2
-alias=$(<alias2)
-cd
-echo "$alias" >> ~/.bashrc && source ~/.bashrc
-cd rounding-module
-
-echo '1' > installed
-#rm install install2 alias alias2
-fi
+##alias
 
 #
 #
