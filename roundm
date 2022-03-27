@@ -21,6 +21,7 @@ echo '"' >> alias
 echo " >> ~/.bashrc && source ~/.bashrc" >> alias
 cat alias | tr -d '\n' > alias2
 bash alias2
+echo '1' > installed
 rm install install2 alias alias2
 fi
 
