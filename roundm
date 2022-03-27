@@ -14,10 +14,10 @@ echo "$PWD" > install
 echo "/roundm" >> install
 cat install | tr -d '\n' > install2
 echo "roundm $=" > alias
-echo '"' >> alias
+echo "'" >> alias
 echo "bash" >> alias
 cat install2 >> alias
-echo '"' >> alias
+echo "'" >> alias
 echo " >> ~/.bashrc && source ~/.bashrc" >> alias
 cat alias | tr -d '\n' > alias2
 bash alias2
