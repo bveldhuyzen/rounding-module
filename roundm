@@ -17,7 +17,7 @@ echo "/roundm" >> install
 cat install | tr -d '\n' > install2
 
 echo '"'
-echo "roundm $=" > alias
+echo "alias roundm=" > alias
 #echo "'" >> alias
 echo "'bash" >> alias
 cat install2 >> alias
