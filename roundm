@@ -38,7 +38,8 @@ echo "'" >> alias_roundm
 cat alias_roundm | tr -d '\n' > roundm_alias
 ALIAS=$(<roundm_alias)
 
-echo "$ALIAS" >> ~/.bashrc && source ~/.bashrc
+echo "$ALIAS" >> ~/.bashrc 
+. ~/.bashrc
 
 rm alias_roundm roundm_alias roundm_path2
 
