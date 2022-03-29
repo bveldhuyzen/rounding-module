@@ -12,7 +12,7 @@
 #
 echo 'Choose 1 for adding the roundm command to your terminal'
 echo 'Choose 2 for not doing so'
-read install_or_not
+read INSTALL_OR_NOT
 if [[ $INSTALL_OR_NOT -eq 1 ]]
 then
 
