@@ -18,8 +18,8 @@ then
 
 echo "$PWD" > install_dir
 INSTALL_DIR=$(<install_dir)
-ROOT_DIR=${INSTALL_DIR::-15}
-echo "$ROOT_DIR" > root_dir
+#ROOT_DIR=${INSTALL_DIR::-15}
+#echo "$ROOT_DIR" > root_dir
 
 echo "$PWD" > roundm_path
 echo "/roundm" >> roundm_path
@@ -39,15 +39,12 @@ cat alias_roundm | tr -d '\n' > roundm_alias
 ALIAS=$(<roundm_alias)
 
 echo "$ALIAS" >> ~/.bashrc && source ~/.bashrc
-echo '1' > installed_roundm
-mv installed_roundm "$INSTALL_DIR"
 
 rm alias_roundm roundm_alias roundm_path2
 
 cd -
 
 else
-
 echo 'rounding-module not aliased'
 fi
 
