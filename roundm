@@ -38,6 +38,8 @@ rm alias_roundm roundm_alias roundm_path2
 
 cd -
 
+echo 'roundm is now set up and ready to go!'
+
 else
 echo 'V'
 fi
