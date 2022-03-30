@@ -5,6 +5,14 @@
 #roundm alias setup
 #
 #
+#touch ~/installed_roundm
+INSTALLED_ROUNDM=$(<~/installed_roundm)
+calc -d "$INSTALLED_ROUNDM + 0" > installed_or_not
+INSTALLED_OR_NOT=$(<installed_or_not)
+
+if [[ $INSTALLED_OR_NOT -eq 1 ]]
+then
+
 echo "$PWD" > roundm_path
 echo "/roundm" >> roundm_path
 cat roundm_path | tr -d '\n' > roundm_path2
@@ -25,13 +33,14 @@ ALIAS=$(<roundm_alias)
 echo "$ALIAS" >> ~/.bashrc 
 . ~/.bashrc
 echo '1' > installed_roundm
-mv installed_roundm "$INSTALL_DIR"
 
 rm alias_roundm roundm_alias roundm_path2
 
 cd -
 
-sed '5,40d' roundm
+else
+echo 'V'
+fi
 
 
 #
