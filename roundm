@@ -10,7 +10,7 @@ INSTALLED_ROUNDM=$(<~/installed_roundm)
 calc -d "$INSTALLED_ROUNDM + 0" > installed_or_not
 INSTALLED_OR_NOT=$(<installed_or_not)
 
-if [[ $INSTALLED_OR_NOT -eq 1 ]]
+if [[ $INSTALLED_OR_NOT -eq 0 ]]
 then
 
 echo "$PWD" > roundm_path
