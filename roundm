@@ -42,6 +42,7 @@ echo 'roundm is now set up and ready to go!'
 
 else
 echo 'V'
+rm installed_or_not
 fi
 
 
