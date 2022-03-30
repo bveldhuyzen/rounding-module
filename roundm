@@ -1,24 +1,10 @@
 #!/bin/bash
 #rounding tool - interactive mode v2.00
 #
-#
-#
-
-#
-#
-echo "$PWD" > install_dir
-INSTALL_DIR=$(<install_dir)
-#ROOT_DIR=${INSTALL_DIR::-15}
-#echo "$ROOT_DIR" > root_dir
-touch installed_roundm
-INSTALLED_OR_NOT$(<"$INSTALL_DIR"/installed_roundm)
 
 #roundm alias setup
 #
 #
-if [[ $INSTALLED_OR_NOT -eq 1 ]]
-then
-
 echo "$PWD" > roundm_path
 echo "/roundm" >> roundm_path
 cat roundm_path | tr -d '\n' > roundm_path2
@@ -45,9 +31,8 @@ rm alias_roundm roundm_alias roundm_path2
 
 cd -
 
-else
-echo 'V'
-fi
+sed '5,40d' roundm
+
 
 #
 #
