@@ -32,8 +32,15 @@ MULTIPLICATION_FACTOR_TOTAL_DONE=$(<MPF_done.txt)
 calc -d "$MULTIPLICATION_FACTOR_TOTAL_DONE * $ROUND_TO_THIS" > rounded_up_number.txt
 ROUNDED_UP_NUMBER=$(<rounded_up_number.txt)
 
-touch LIST_DATE_TEST_2.txt
-echo "$ROUNDED_UP_NUMBER" >> LIST_DATE_TEST_2.txt
+#you may for example store the rounded number in a file of choice to create a list, e.g.
+#
+#touch LIST_DATE_TEST.txt
+OUTPUT_FILENAME_1=$(<OUTPUT_LOGS/output_filename_for_the_rounding_module)
+cd OUTPUT_LOGS
+echo "$ROUNDED_NUMBER" >> "$OUTPUT_FILENAME_1"
+cd -
+#
+#read -p 'pause'
 
 rm full_number_1.txt round_to_this.txt MPF.txt MPF_total.txt MPF_done.txt steps_leftover_decimals.txt steps_leftover_decimals_1.txt rounded_up_number.txt
 
