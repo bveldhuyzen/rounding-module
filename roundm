@@ -147,7 +147,7 @@ fi
 read -p 'pause'
 
 #remove temp files
-rm file_path.txt full_number_1_dotcom.txt selection_updown.txt
+rm file_path.txt full_number_1_dotcom.txt selection_updown.txt selection_module.txt
 
 
 #V
