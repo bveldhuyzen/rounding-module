@@ -15,7 +15,7 @@ echo $MPF | awk '{print int($0)}' > MULTIPLICATION_FACTOR_total.txt
 MULTIPLICATION_FACTOR_TOTAL=$(<MULTIPLICATION_FACTOR_total.txt)
 
 calc -d "$MULTIPLICATION_FACTOR_TOTAL * $ROUND_TO_THIS" > rounded_down_number.txt
-ROUNDED_DOWN_NUMBER=$(<rounded_down_number.txt)
+ROUNDED_NUMBER=$(<rounded_down_number.txt)
 
 #you may for example store the rounded number in a file of choice to create a list, e.g.
 #
