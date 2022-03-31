@@ -29,8 +29,11 @@ ROUNDED_NUMBER=$(<rounded_number.txt)
 
 #you may for example store the rounded number in a file of choice to create a list, e.g.
 #
-touch LIST_DATE_TEST.txt
-echo "$ROUNDED_NUMBER" >> LIST_DATE_TEST.txt
+#touch LIST_DATE_TEST.txt
+OUTPUT_FILENAME_1=$(<OUTPUT_LOGS/output_filename_for_the_rounding_module)
+cd OUTPUT_LOGS
+echo "$ROUNDED_NUMBER" >> "$OUTPUT_FILENAME_1"
+cd -
 #
 #read -p 'pause'
 
