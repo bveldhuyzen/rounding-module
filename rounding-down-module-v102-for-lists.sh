@@ -27,7 +27,5 @@ cd -
 #
 #read -p 'pause'
 
-rm full_number_1.txt round_to_this.txt MPF.txt MULTIPLICATION_FACTOR_total.txt rounded_down_number.txt
-
 
 #V
