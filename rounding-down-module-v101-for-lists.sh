@@ -37,7 +37,5 @@ cd -
 #
 #read -p 'pause'
 
-rm full_number_1.txt round_to_this.txt integer.txt leftover_decimals.txt MULTIPLICATION_FACTOR.txt MULTIPLICATION_FACTOR_total.txt new_decimals.txt rounded_number.txt
-
 
 #V
