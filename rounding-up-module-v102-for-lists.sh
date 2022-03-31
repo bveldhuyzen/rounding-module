@@ -42,7 +42,5 @@ cd -
 #
 #read -p 'pause'
 
-rm full_number_1.txt round_to_this.txt MPF.txt MPF_total.txt MPF_done.txt steps_leftover_decimals.txt steps_leftover_decimals_1.txt rounded_up_number.txt
-
 
 #V
