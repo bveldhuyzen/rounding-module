@@ -30,7 +30,7 @@ fi
 MULTIPLICATION_FACTOR_TOTAL_DONE=$(<MPF_done.txt)
 
 calc -d "$MULTIPLICATION_FACTOR_TOTAL_DONE * $ROUND_TO_THIS" > rounded_up_number.txt
-ROUNDED_UP_NUMBER=$(<rounded_up_number.txt)
+ROUNDED_NUMBER=$(<rounded_up_number.txt)
 
 #you may for example store the rounded number in a file of choice to create a list, e.g.
 #
