@@ -1,6 +1,9 @@
 # rounding-module
 Interactive rounding module - rounds numbers from file to any specified decimal(s). Accepts files as input. Logs output line by line in new text file.
 
+# bugged // being fixed
+
+
 List file format:
 - One numerical value per line
 - Any amount of lines
