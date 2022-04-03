@@ -16,8 +16,7 @@ sudo apt-get install calc git
 
 1. Obtain roundm via git clone or grabber of choice, e.g. #git clone [link_to_repo_here]
 2. Run #bash roundm
-3. After running #bash roundm once, your terminal can start the rounding module next time by just executing #roundm
-4. Done.
+3. Done.
 
 ____
 
@@ -47,3 +46,15 @@ ROUNDING UP MODULES
 - v1.01 Calculates the nearest (multiple of) specified decimals with the integer as starting point (e.g. with rounding up set at 0.75, the number 1,55 will round up to 1.75)
 - v1.02 Calculates the nearest (multiple of) specified decimals with 0 (zero) as starting point (e.g. with rounding up set at 0.75, the number 1,55 will round up to 2,25)
 
+____
+
+CHANGELOG
+
+v2.02
+removed alias setup until release of v3.00
+
+v2.01
+included alias setup
+
+v2.00
+up
