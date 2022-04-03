@@ -67,10 +67,10 @@ echo 'done'
 #
 #
 echo 'Specify name of output file (e.g. my_output.txt)'
-cd "$ROUNDM_PATH_007"/OUTPUT_LOGS
+cd ~/"$ROUNDM_PATH_007"/OUTPUT_LOGS
 read OUTPUT_FILENAME
 echo "$OUTPUT_FILENAME" > output_filename_for_the_rounding_module
-cd -
+cd ~/"$ROUNDM_PATH_007"/
 echo ''
 echo " in folder OUTPUT_LOGS your output file = $OUTPUT_FILENAME"
 echo ''
