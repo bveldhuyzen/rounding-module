@@ -50,11 +50,9 @@ ____
 
 CHANGELOG
 
-v2.02
-removed alias setup until release of v3.00
-
-v2.01
-included alias setup
-
-v2.00
-up
+- v2.02
+  removed alias setup until release of v3.00
+- v2.01
+  included alias setup
+- v2.00
+  up
