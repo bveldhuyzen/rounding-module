@@ -1,52 +1,7 @@
 #!/bin/bash
-#rounding tool - interactive mode v2.01
+#rounding tool - interactive mode v2.02
 #
-
-#roundm alias setup
-#
-#
-#touch ~/installed_roundm
-INSTALLED_ROUNDM=$(<~/installed_roundm)
-calc -d "$INSTALLED_ROUNDM + 0" > installed_or_not
-INSTALLED_OR_NOT=$(<installed_or_not)
-
-if [[ $INSTALLED_OR_NOT -eq 0 ]]
-then
-
-echo "$PWD" > roundm_path
-echo "/roundm" >> roundm_path
-cat roundm_path | tr -d '\n' > roundm_path2
-cp roundm_path2 ~
-
-echo "$PWD" > roundm_path_007
-ROUNDM_PATH_007=$(roundm_path_007)
-
-cd
-
-ROUNDM_PATH=$(<roundm_path2)
-echo 'alias ' > alias_roundm
-echo "roundm=" >> alias_roundm
-echo "'" >> alias_roundm
-echo "bash " >> alias_roundm
-echo "$ROUNDM_PATH" >> alias_roundm
-echo "'" >> alias_roundm
-cat alias_roundm | tr -d '\n' > roundm_alias
-ALIAS=$(<roundm_alias)
-
-echo "$ALIAS" >> ~/.bashrc 
-. ~/.bashrc
-echo '1' > installed_roundm
-
-rm alias_roundm roundm_alias roundm_path2
-
-cd -
-
-echo 'roundm is now set up and ready to go!'
-
-else
-echo 'V'
-rm installed_or_not
-fi
+#start via terminal from folder/directory
 
 
 #
@@ -67,10 +22,10 @@ echo 'done'
 #
 #
 echo 'Specify name of output file (e.g. my_output.txt)'
-cd ~/"$ROUNDM_PATH_007"/OUTPUT_LOGS
+cd OUTPUT_LOGS
 read OUTPUT_FILENAME
 echo "$OUTPUT_FILENAME" > output_filename_for_the_rounding_module
-cd ~/"$ROUNDM_PATH_007"/
+cd -
 echo ''
 echo " in folder OUTPUT_LOGS your output file = $OUTPUT_FILENAME"
 echo ''
