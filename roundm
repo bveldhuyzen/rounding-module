@@ -18,6 +18,9 @@ echo "/roundm" >> roundm_path
 cat roundm_path | tr -d '\n' > roundm_path2
 cp roundm_path2 ~
 
+echo "$PWD" > roundm_path_007
+ROUNDM_PATH_007=$(roundm_path_007)
+
 cd
 
 ROUNDM_PATH=$(<roundm_path2)
@@ -65,7 +68,7 @@ echo 'done'
 #
 echo 'Specify name of output file (e.g. my_output.txt)'
 read OUTPUT_FILENAME
-cd OUTPUT_LOGS
+cd "$ROUNDM_PATH_007"/OUTPUT_LOGS
 echo "$OUTPUT_FILENAME" > output_filename_for_the_rounding_module
 cd -
 echo ''
