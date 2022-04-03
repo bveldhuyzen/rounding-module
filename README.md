@@ -15,8 +15,9 @@ INSTALL
 sudo apt-get install calc git
 
 1. Obtain roundm via git clone or grabber of choice, e.g. #git clone [link_to_repo_here]
-2. Run #bash roundm
-3. Done.
+2. cd to rounding-module folder
+3. Run #bash roundm
+4. Done.
 
 ____
 
