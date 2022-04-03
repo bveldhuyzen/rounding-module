@@ -23,7 +23,7 @@ ____
 
 INSTRUCTIONS FOR USE
 
-1. Copy-paste the file path including file name, e.g. home/me/Desktop/my_list.txt
+1. Copy-paste the file path including file name, e.g. ~/Desktop/my_list.txt
 2. Confirm entry is correct
 3. Specify output filename (find it in the OUTPUT_LOGS folder)
 4. Select rounding up or down
