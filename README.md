@@ -7,7 +7,7 @@ List file format:
 - Any amount of lines
 - Integer separated from decimal(s) by either dot or comma
 - The file can contain text on lines; the output in the log will be incorrect for that line
-
+- For now only functional for positive numbers; option to round negative numbers in the making
 ____
 
 INSTALL
