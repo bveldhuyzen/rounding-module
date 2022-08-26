@@ -8,7 +8,7 @@ FULL_NUMBER=$(<full_number_1.txt)
 
 ROUND_TO_THIS=$(<round_to_this.txt)
 
-echo $FULL_NUMBER | awk '{print int($0)}' > integer.txt 
+echo "$FULL_NUMBER" | awk '{print int($0)}' > integer.txt 
 INTEGER=$(<integer.txt) 
   
 calc -d "$FULL_NUMBER - $INTEGER" > leftover_decimals.txt 
@@ -18,7 +18,7 @@ calc -d "$DECIMALS / $ROUND_TO_THIS" > MULTIPLICATION_FACTOR.txt
 MULTIPLICATION_FACTOR=$(<MULTIPLICATION_FACTOR.txt) 
   
 
-echo $MULTIPLICATION_FACTOR | awk '{print int($0)}' > MULTIPLICATION_FACTOR_total.txt 
+echo "$MULTIPLICATION_FACTOR" | awk '{print int($0)}' > MULTIPLICATION_FACTOR_total.txt 
 MULTIPLICATION_FACTOR_TOTAL=$(<MULTIPLICATION_FACTOR_total.txt) 
   
 calc -d "$MULTIPLICATION_FACTOR - $MULTIPLICATION_FACTOR_TOTAL" > steps_leftover_decimals.txt 
